@@ -1,0 +1,15 @@
+GET http://localhost:3000/tasks
+
+### Add a new task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "taskText": "Task added via REST Client"
+}
+
+### Delete a task
+DELETE http://localhost:3000/tasks/6adcd64963c6d84b5b929316
+
+### Toggle a task done
+PUT http://localhost:3000/tasks/6adcd66e63c6d84b5b929317
